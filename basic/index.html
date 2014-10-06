@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>simple angular app</title>
+</head>
+<body>
+  <div ng-app="firstApp">
+    <div ng-controller='FirstController'>
+      <input type="text" ng-model="first">
+      <input type="text" ng-model="last">
+      <button ng-click='updateMessage()'>Message</button>
+      <h3>{{heading + message}}</h3>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+  <script type="text/javascript" src="simpleApp.js"></script>
+</body>
+</html>

@@ -18,6 +18,7 @@ app.get('/', function(req, res) {
     res.send(doc);
   });
 });
+app.use('/basic', express.static(__dirname + '/basic'));
 
 // serve a static page
 app.use('/hello', express.static(__dirname + '/hello'));
